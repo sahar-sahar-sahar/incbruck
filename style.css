@@ -1,0 +1,231 @@
+ body{
+    font-family: "Noto Sans", "sans-serif", Arial, Helvetica, sans-serif;
+}
+.page-header{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-menu-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.main-menu{
+    flex-grow: 1;
+}
+.main-menu-list-link{
+    color: #2A3D8F;
+    text-decoration: none;
+    font-size: 24px;
+}
+.logo{
+    width: 70px;
+}
+.slogan{
+    background: url(img/innsbruck1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.slogan h1{
+    width: 1200px;
+    margin: 0 auto;
+}
+.about{
+    width: 1200px;
+    margin: 0 auto;
+}
+.about h2{
+    color: rgb(61, 76, 215);
+}
+.marketing{
+    background: url(img/skier.png);
+    height: 270px;
+    width: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.marketing p{
+    text-transform: uppercase;
+}
+.marketing a{
+    color: rgb(142, 140, 140);
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgba(231, 227, 227, 0.751);
+    display: inline-block;
+    padding: 15px;
+    align-self: flex-end;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+figure img{
+    width: 100%;
+}
+figcaption{
+    color: rgb(142, 140, 140);
+    text-transform: uppercase;
+    background: rgba(231, 227, 227, 0.751);
+    padding: 15px;
+    text-align: center;
+}
+.tik{
+    font-size: 25px;
+}
+.gallery{
+    width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.gallery-list{
+    list-style-type: none;
+    padding: 0;
+}
+.gallery-item{
+    display: flex;
+    align-items: center;
+    background: #B5D4C5;
+    margin-bottom: 15px;
+}
+.gallery-item-h3{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+.map{
+    width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.google{
+    width: 100%;
+}
+.map-hading{
+    color: rgba(111, 111, 239, 0.888);
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+td, th {
+    border: 1px solid black;
+}
+.transfer span{
+    display: none;
+}
+thead{
+    background-color: rgb(30, 30, 147);
+    color: white;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(192, 224, 192);
+   display: flex;
+   align-items: center;
+
+}
+.footer-img-wrapper{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.footer p{
+    color: rgba(86, 86, 86, 0.923);
+}
+.footer-wrapper{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media(max-width:576px){
+.main-menu-list{
+    display: block;
+    padding: 0;
+}
+.page-header{
+    display: block;
+    text-align: center;
+}
+.main-menu-list-item{
+    margin: 15px 0;
+}
+.about{
+    width: auto ;
+    
+}
+.wrapper{
+    flex-direction: column;
+}
+.marketing{
+    width: 100%;
+}
+.gallery{
+    width: 100%;
+
+}
+.gallery-item{
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+.gallery-item img{
+    width:100%; 
+}
+.gallery-item-h3{
+   order: -1; 
+}
+.map{
+    width: 100%;
+}
+table{
+    width: 90%;
+    
+}
+thead{
+    display: none;
+}
+.transfer span{
+    display: block;
+    color: rgb(79, 77, 77);
+    background: rgba(157, 157, 239, 0.779);
+    font-size: 20px;
+    padding: 10px 0 ;
+
+}
+.transfer tr{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; 
+}
+.transfer td{
+    margin: 0px -1px -1px 0;
+    padding: 0;
+    width: 45%;
+    height: 85px;
+}
+.footer-wrapper{
+    width: 100%;
+}
+.gallery, .map{
+    padding: 0;
+}
+}
